@@ -1,0 +1,213 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
+}
+
+li{
+	list-style: none;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+.map{
+	width: 100%;
+	height: 500px;
+}
+
+/* Header */
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	box-shadow: 10px 2px 5px black;
+}
+
+.logo{
+	margin-left: 5%;
+	align-self: center;
+	color: blue;
+}
+
+.logo h2{
+	letter-spacing: 10px;
+	font-size: 2rem;
+}
+
+.nav-bar{
+	display: flex;
+	margin-right: 5%;
+}
+
+.nav-bar-2{
+	display: none;
+}
+
+.nav-bar__item{
+	padding: 0 50px;
+	align-self: center;
+}
+
+.nav-bar__item-link{
+	text-transform: uppercase;
+}
+
+.nav-bar__item-link:hover{
+	color: black;
+	transition: .3s ease-in-out;
+}
+
+.nav-toggle{
+	background: transparent;
+	border: none;
+	font-size: 2rem;
+	margin-right: 3%;
+	cursor: pointer;
+	display: none;
+}
+
+/* Nosotros */
+
+.nosotros{
+	margin-top: 10px;
+}
+
+.nosotros h2{
+	display: flex;
+	justify-content: center;
+}
+
+.nosotros p{
+	font-size: 1.2rem;
+	color: blue;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+/* Contacto */
+
+.contacto{
+	margin-top: 20px;
+}
+
+.contacto h2{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.container-cards{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.cards{
+	height: 100px;
+	border: 3px double black;
+	margin: 0 5%;
+}
+
+.cards h3{
+	display: flex;
+	justify-content: center;
+	line-height: 50px;
+}
+
+.cards p{
+	display: flex;
+	justify-content: center;
+	line-height: 25px;
+}
+
+/* Encuentranos */
+
+.encuentranos{
+	margin-top: 20px;
+}
+
+.encuentranos h2{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+
+/* MediaQueries */
+
+@media (max-width: 992px) {
+	.logo{
+		margin-left: 5%;
+		align-self: center;
+		color: blue;
+	}
+	
+	.nav-bar{
+		display: none;
+	}
+	
+	.nav-bar__item{
+		display: flex;
+		justify-content: center;
+	}
+	
+	.nav-bar__item-link{
+		min-width: 80%;
+		padding: 30px 0;
+		border-bottom: 1px solid #000;
+		text-align: center;
+	}
+	
+	.nav-link{
+		color: black;
+	}
+
+	.nav-bar-2{
+		margin-top: 50px;
+		position: absolute;
+		z-index: 10;
+		padding: 0;
+		display: block;
+		width: 100%;
+		height: 200%;
+		background: aqua;
+		overflow-y: scroll;
+		left: -100%;
+		transition: .3s ease-out;
+	}
+
+	.nav-bar-2-active{
+		left: 0;
+	}
+	
+	.nav-toggle{
+		background: transparent;
+		border: none;
+		font-size: 2rem;
+		margin-right: 3%;
+		cursor: pointer;
+		display: block;
+	}
+}
+
+@media (max-width: 768px) {
+	.container-cards{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (max-width: 576px) {
+	h2{
+		text-align: center;
+	}	
+}

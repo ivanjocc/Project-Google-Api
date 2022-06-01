@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<script src="https://kit.fontawesome.com/a220089ae1.js" crossorigin="anonymous"></script>
+	<title>Integracion Api Google Maps</title>
+</head>
+<body>
+
+	<!-- Header -->
+	<header>
+		<nav class="nav">
+			<a href="/" class="logo">
+				<h2>LOGO</h2>
+			</a>
+
+			<ul class="nav-bar">
+				<li class="nav-bar__item">
+					<a href="/" class="nav-bar__item-link">Inicio</a>
+				</li>
+				<li class="nav-bar__item">
+					<a href="#nosotros" class="nav-bar__item-link">Nosotros</a>
+				</li>
+				<li class="nav-bar__item">
+					<a href="#contacto" class="nav-bar__item-link">Contacto</a>
+				</li>
+				<li class="nav-bar__item">
+					<a href="#encuentranos" class="nav-bar__item-link">Encuéntranos</a>
+				</li>
+			</ul>
+
+			<ul class="nav-bar-2">
+				<li class="nav-bar__item">
+					<a href="/" class="nav-bar__item-link nav-link">Inicio</a>
+				</li>
+				<li class="nav-bar__item">
+					<a href="#nosotros" class="nav-bar__item-link nav-link">Nosotros</a>
+				</li>
+				<li class="nav-bar__item">
+					<a href="#contacto" class="nav-bar__item-link nav-link">Contacto</a>
+				</li>
+				<li class="nav-bar__item">
+					<a href="#encuentranos" class="nav-bar__item-link nav-link">Encuéntranos</a>
+				</li>
+			</ul>
+
+			<button class="nav-toggle">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+		</nav>
+	</header>
+
+	<!-- Nosotros -->
+	<section id="nosotros">
+		<div class="nosotros">
+			<h2>Nosotros</h2>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius eligendi culpa sunt vel aperiam voluptatem! Quos nobis porro optio laudantium eveniet, minima incidunt? Quia itaque facilis explicabo doloribus dolor fugiat facere perspiciatis sunt nemo. Nemo similique voluptatum ducimus aliquam ut architecto pariatur cumque beatae, magni fuga. Expedita, eum repellat praesentium recusandae corporis voluptates est quis magni itaque sit vero non quasi voluptate. Blanditiis quaerat odio cum quidem? Tempore ducimus veniam veritatis. Amet maiores voluptas voluptatum molestias omnis? Et sequi quos excepturi, explicabo autem cum ipsa exercitationem est voluptate sit, mollitia dolores laborum eaque temporibus neque laboriosam! Dolorem, officiis eveniet. Distinctio!</p>
+		</div>
+	</section>
+
+	<!-- Contacto -->
+	<section id="contacto">
+		<div class="contacto">
+			<h2>Información de contacto</h2>
+			<div class="container-cards">
+				<div class="cards">
+					<h3>Dirección</h3>
+					<p>Cra. 123 #456 - 789</p>
+				</div>
+				<div class="cards">
+					<h3>Teléfono</h3>
+					<p>123-456-7890</p>
+				</div>
+				<div class="cards">
+					<h3>Correo</h3>
+					<p>correo-prueba@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Encuéntranos -->
+	<section id="encuentranos">
+		<div class="encuentranos">
+			<h2>¿Dónde estamos ubicados?</h2>
+			<div class="map" id="map"></div>
+			<script src="./map.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+		</div>
+	</section>
+
+	<script src="./menu.js"></script>
+</body>
+</html>
